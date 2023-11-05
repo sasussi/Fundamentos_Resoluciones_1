@@ -1,0 +1,153 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para la lista de productos */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 45%; /* Ajusta el ancho para que haya dos cuadrados por fila */
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 20px;
+  color: #007d60;
+  margin: 10px 0;
+}
+
+.product-stock {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit-button, .delete-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007d60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.edit-button:hover, .delete-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para los formularios */
+.form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Estilos para enlaces de volver */
+.goBack {
+  display: inline-block;
+  text-decoration: none;
+  color: #007d60;
+  font-size: 18px;
+  margin-top: 20px;
+  transition: color 0.3s;
+}
+
+.goBack:hover {
+  color: #0056b3;
+}
+
+.addButton {
+  padding: 10px 20px;
+  background-color: #007d60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin: 0 auto; /* Alinea horizontalmente el botón en el centro */
+  display: block; /* Convierte el enlace en un bloque para aplicar márgenes */
+  width: 145px; /* Ajusta el ancho del botón según tus preferencias */
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
