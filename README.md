@@ -1,1 +1,0 @@
-# Fundamentos_Resoluciones_1
