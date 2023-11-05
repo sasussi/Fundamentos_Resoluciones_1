@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <div class="product-list">
+        {% for product in products %}
+        <div class="product-card">
+            <img class="product-image" src="{{ product.image_url }}" style="max-width: 200px;">
+            <h3 class="product-title">{{ product.name }}</h3>
+            <p class="product-price">Precio: ${{ product.price }}</p>
+            <p class="product-stock">Stock: {{ product.stock }} unidades</p>
+            <div class="product-actions">
+                <a class="edit-button" href="/edit_product/{{ product.id }}">Editar</a>
+                <a class="delete-button" href="/delete_product/{{ product.id }}">Eliminar</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <a class="addButton" href="/add_product">Agregar Producto</a>
+</body>
+</html>
+
+
+
