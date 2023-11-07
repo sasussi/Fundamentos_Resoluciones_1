@@ -15,12 +15,41 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+        #user-data h2 {
+            color: #FF0000; 
+        }
     </style>
 </head>
 <body>
     <div class="thank-you">
         <h1>Muchas gracias por tu consulta!</h1>
         <p>Te responderemos a la brevedad.</p>
+        <br><br>
+        <div id="user-data">
+            <h2>Datos ingresados en el formulario:</h2>
+            <p>Nombre: <span id="first-name"></span></p>
+            <br>
+            <p>Apellido: <span id="last-name"></span></p>
+            <br>
+            <p>Correo Electronico: <span id="email"></span></p>
+            <br>
+            <p>Telefono: <span id="phone"></span></p>
+            <br>
+            <p>Consulta: <span id="message"></span></p>
+        </div>
     </div>
+    
+    <script>
+        // Obtén los parámetros de consulta de la URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Obtiene y muestra los valores en la página
+        document.getElementById("first-name").textContent = urlParams.get("first-name") || "No se proporcionó";
+        document.getElementById("last-name").textContent = urlParams.get("last-name") || "No se proporcionó";
+        document.getElementById("email").textContent = urlParams.get("email") || "No se proporcionó";
+        document.getElementById("phone").textContent = urlParams.get("phone") || "No se proporcionó";
+        document.getElementById("message").textContent = urlParams.get("message") || "No se proporcionó";
+    </script>
+    
 </body>
 </html>
